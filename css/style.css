@@ -1,0 +1,761 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	font-size:100%;
+}
+
+body{
+	-webkit-text-size-adjust: 100%;
+	width:100%;
+	margin:0px auto;
+	padding:0px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:100%;
+	color:#000;
+}
+
+#wrap{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	background:url(../images/bg_imag.jpg) no-repeat;
+	background-attachment:fixed;
+	background-position:center center;
+	
+}
+
+#contents{
+    max-width:950px;
+	margin:0 auto;
+	background:#FFF;
+}
+
+a img{
+    border-style:none;
+}
+
+footer{
+	text-align:center;
+	padding:40px 0 20px 0;
+	width:100%;
+}
+
+footer small{
+	font-size:70%;
+	margin:0 auto;
+	color:#2D635F;
+}
+
+footer h2{
+	font-size:60%;
+	font-weight:300;
+	padding:0;
+	margin:0;
+}
+
+footer span{
+	font-size:60%;
+	padding:0;
+	margin:0;
+}
+
+footer ul{
+	display:table;
+	margin:10px auto;
+	width:35%;
+	font-size:13px;
+}
+
+footer li{
+	display:table-cell;
+	list-style:none;
+	color:#2D635F;
+	text-align:center;
+	width:auto;
+	*display:inline;
+	*zoom:1;
+}
+
+footer li+li{
+  border-left: 1px solid #636363;
+}
+
+
+#back-top {
+	position:fixed;
+	bottom:10px;
+	right:20px;
+	width:55px;
+}
+
+#back-top a {
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+ul{
+	-webkit-padding-start:0 !important;
+	-moz-padding-start:0 !important;
+	-ms-padding-start:0 !important;
+}
+
+/* PC&タブレット端末向けCSS */
+
+@media screen and (min-width:768px) {
+
+img{width:100%;}
+
+.nav_pc{
+	max-width:950px;
+	height:140px;
+	background:#FFF;
+	position:fixed;
+	z-index:1001;
+	margin:0 auto;
+	box-shadow: 0 0 5px #555;
+	-moz-box-shadow: 0 0 5px #555;
+	-o-box-shadow: 0 0 5px #555;
+	-ms-box-shadow: 0 0 5px #555;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
+}
+
+.main_site{
+	text-align:right;
+	padding:0 50px 10px 0;
+}
+
+.main_site a{
+	text-decoration:none;
+	font-size:13px;
+	color:#FFF;
+	background:#00A67A;
+	padding:0 10px;
+	border-radius:5px;
+}
+
+.main_site a:hover{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+ul.g_nav01{
+	display:table;
+	margin:0 auto;
+	width:80%;
+	height:25px;
+}
+
+.nav_pc .g_nav01 li{
+	display:table-cell;
+	list-style:none;
+	text-align:center;
+	*display:inline;
+	*zoom:1;
+}
+
+.nav_pc .g_nav01 li+li{
+  border-left: 1px solid #636363;
+}
+
+.nav_pc .g_nav01 a{
+	color:#636363;
+	font-size:13px;
+	font-weight:bold;
+	font-family:"メイリオ", Meiryo, sans-serif;
+	text-decoration:none;
+}
+
+.fd{
+	display:none;
+}
+
+.time{
+	display:none;
+}
+
+#nav_sp ul,li{
+	display:none;
+}
+
+.otoiawase{
+	width:100%;
+	text-align:center;
+}
+
+.otoiawase a{
+	width:516px;
+	margin:10px auto 0 auto;
+	padding:0 !important;
+	display:inline-block;
+}
+
+.otoiawase{
+	width:100%;
+}
+
+.tokuten{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents01 img.freedial{
+	display:none;
+}
+
+#contents01{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+
+#contents02{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents03{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents04{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents04 .nav_sekoujirei_sp{
+	display:none;
+}
+
+#contents04 .nav_sekoujirei{
+	max-width:950px;
+	margin:40px auto 0 auto;
+}
+
+#contents04 .nav_sekoujirei ul{
+	display:table;
+	table-layout: fixed;
+	width:95%;
+	margin:0 auto;
+}
+
+#contents04 .nav_sekoujirei li{
+	display:table-cell;
+	text-align:center;
+	padding:0;
+}
+
+#contents04 .nav_sekoujirei li span{
+	font-size:93%;
+	font-family: "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E";
+	font-weight:500;
+	color:#248379;
+}
+
+#contents04 .nav_sekoujirei li img{
+	width:70%;
+}
+
+#contents04 .nav_sekoujirei li a:hover{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+#sekoujirei01,
+#sekoujirei02,
+#sekoujirei03,
+#sekoujirei04{
+	width:100%;
+	margin:20px auto;
+	padding-top:100px;
+}
+
+#sekoujirei01 h1,
+#sekoujirei02 h1,
+#sekoujirei03 h1,
+#sekoujirei04 h1{
+	font-size:2rem;
+	font-family: "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E";
+	font-weight:500;
+	color:#248379;
+	margin-left:5%;
+}
+
+.overview_sp{
+	display:none;
+}
+
+.overview_pc table{
+	max-width:940px;
+	margin:5% auto;
+	border-spacing:10px;
+}
+
+.overview_pc td{
+	padding:4px 20px;
+	text-align:center;
+}
+
+.overview_pc td.green_bg{
+	background:#248379;
+	color:#FFF;
+	padding:4px 20px;
+	text-align:center;
+}
+
+.overview_pc img{
+	max-width:950px;
+}
+
+#voice{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents05{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents06{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:140px;
+}
+
+#contents07{
+	max-width:950px;	
+	margin:0 auto;
+	padding-top:140px;
+	text-align:center;	
+}
+
+#contents07 iframe{
+	width:60%;
+	height:260px;
+	margin:0 auto;
+}
+
+#mail_form{
+	max-width:950px;
+	margin:0 auto;
+	padding:140px 0 20px 0;
+}
+
+#mail_form table{
+	width:85%;
+	margin:0 auto;
+}
+
+#mail_form table tr{
+	height:40px;
+}
+
+#mail_form table th{
+	font-size:12px;
+	width:20%;
+	color:#2D635F;
+}
+
+#mail_form table td{
+	width:45%;
+}
+
+.event_name input{
+	width:76%;
+}
+
+.note{
+	font-size:10px;
+}
+
+.number_of_people select{
+	width:100px;
+}
+
+.number_of_people span{
+	font-size:12px;
+}
+
+#mail_form .mail_form_sp img{
+	display:none;
+}
+
+#mail_form .mail_form_pc img{ 
+	display:block;
+}
+
+#mainform-submit{
+	width:70%;
+	margin:20px auto 0 auto;
+	text-align:center;
+}
+
+#mainform-submit input{
+	width:30%;
+}
+
+.required{
+	text-align:right;
+}
+
+.required span{
+	margin-right:20px;
+}
+
+.red{
+	font-size:12px;
+	color:red;
+	font-weight:bold;
+}
+
+#agreement img.freedial{
+	display:none;
+}
+
+#agreement{
+	max-width:950px;
+	margin:0 auto;
+	padding-top:105px;
+}
+
+#privacy img.freedial{
+	display:none;
+}
+
+#privacy{
+	max-width:950px;
+	margin:0 auto;
+	/*padding-top:105px;*/
+}
+
+}
+
+/* スマホ向けCSS */
+
+@media screen and (max-width:767px) {
+
+#contents{
+	width:100%;
+}
+
+/* グローバルナビ */
+
+.nav_sp{
+	display:block;
+	width:90%;
+	margin:2% auto;	
+}
+
+.g_nav01_sp{
+	display:table;
+	table-layout:fixed;
+	margin:1% auto;
+	padding:0;
+}
+
+.g_nav01_sp ul{
+	margin:0 auto;
+}
+
+.g_nav01_sp li{
+	display:table-cell;
+	list-style:none;
+}
+
+.nav_pc{
+	display:none;	
+}
+
+.fd{
+	width:95%;
+	text-align:right;
+	display:inline-block;
+}
+
+.fd span{
+	font-weight:bold;
+	font-size:1.2rem;
+	padding-left:2.5em;
+	background:url(../images/fb.jpg) no-repeat left;
+}
+
+.time{
+	width:95%;
+	text-align:right;
+}
+
+.time span{
+	font-weight:bold;
+	font-size:80%;
+	color:#1B1B1B;
+}
+
+.g_nav01{
+	display:none;
+}
+
+/* メインコンテンツ */
+
+.otoiawase{
+	display:block;
+	width:90%;
+	margin:0 auto 5% auto;	
+}
+
+.otoiawase img{
+	width:100%;
+}
+
+.tokuten img{
+	display:block;
+	width:100%;
+}
+
+#contents01 img.freedial{
+	display:block;
+	width:100%;
+}
+
+#contents01 img{
+	display:block;
+	width:100%;
+}
+
+#contents02 img{
+	display:block;
+	width:100%;
+}
+
+#contents03 img{
+	display:block;
+	width:100%;
+}
+
+#contents04 img{
+	display:block;
+	width:100%;
+}
+
+#contents04 .nav_sekoujirei{
+	display:none;
+}
+
+#contents04 .nav_sekoujirei_sp{
+	display:block;
+	width:95%;
+	margin:2% auto;	
+}
+
+#contents04 .nav_sekoujirei_sp ul{
+	display:table;
+	table-layout: fixed;
+	width:95%;
+	margin:0 auto;
+}
+
+#contents04 .nav_sekoujirei_sp li{
+	display:table-cell;
+	text-align:center;
+	padding:0;
+}
+
+#contents04 .nav_sekoujirei li img{
+	width:70%;
+}
+
+#contents04 .nav_sekoujirei li a:hover{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+#sekoujirei01,
+#sekoujirei02,
+#sekoujirei03,
+#sekoujirei04{
+	width:100%;
+	margin:20px auto;
+}
+
+#sekoujirei01 h1,
+#sekoujirei02 h1,
+#sekoujirei03 h1,
+#sekoujirei04 h1{
+	font-size:2rem;
+	font-family: "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E";
+	font-weight:500;
+	color:#248379;
+	margin-left:5%;
+}
+
+.overview_pc{
+	display:none;
+}
+
+.overview_sp table{
+	width:100%;
+	margin:5% auto;
+	border-spacing:2%;
+}
+
+.overview_sp td{
+	text-align:center;
+}
+
+.overview_sp td.green_bg{
+	background:#248379;
+	color:#FFF;
+	text-align:center;
+}
+
+.overview_sp img{
+	width:100%;
+}
+
+#voice img{
+	display:block;
+	width:100%;
+}
+
+#contents05 img{
+	display:block;
+	width:100%;
+}
+
+#contents06 img{
+	display:block;
+	width:100%;
+}
+
+#contents07 img{
+	display:block;
+	width:100%;
+}
+
+#contents07 iframe{
+	width:90%;
+	padding:3%;
+}
+
+.mail_form_sp_title img{
+	display:block;
+	width:100%;
+}
+
+#mail_form{
+	width:96%;
+	margin:5% auto 0 auto;
+	padding-bottom:20%;
+}
+
+#mail_form table{
+	width:96%;
+	margin:5% auto;
+}
+
+#mail_form table tr{
+	height:50px;
+}
+
+#mail_form table th{
+	font-size:70%;
+	width:20%;
+}
+
+#mail_form table td{
+	width:70%;
+}
+
+#mail_form table input{
+	width:90%;
+}
+
+.note{
+	font-size:65%;
+}
+
+.note br{
+	display:none;
+}
+
+.number_of_people select{
+	width:40%;
+	margin:3% 0;
+}
+
+.number_of_people span{
+	font-size:75%;
+}
+
+#mail_form table textarea{
+	width:90%;
+}
+
+#mail_form .mail_form_sp img{
+	display:none;
+}
+
+#mail_form .mail_form_pc img{ 
+	display:block;
+}
+
+#mainform-submit{
+	width:70%;
+	margin:0 auto;
+	text-align:center;
+}
+
+#mainform-submit input{
+	width:30%;
+}
+
+.required{
+	text-align:right;
+	width:100%;
+}
+
+.required span{
+	margin-right:5%;
+}
+
+.red{
+	font-size:85%;
+	color:red;
+	font-weight:bold;
+}
+
+footer ul{
+	width:60%;
+}
+
+#agreement img.freedial{
+	display:block;
+	width:100%;
+}
+
+#agreement img{
+	display:block;
+	width:100%;
+}
+
+#privacy img.freedial{
+	display:block;
+	width:100%;
+}
+
+#privacy img{
+	display:block;
+	width:100%;
+}
+
+}
