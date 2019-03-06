@@ -64,7 +64,6 @@ footer ul{
 	display:table;
 	margin:10px auto;
 	width:35%;
-	font-size:13px;
 }
 
 footer li{
@@ -109,6 +108,7 @@ ul{
 img{width:100%;}
 
 .nav_pc{
+	display: block;
 	max-width:950px;
 	height:140px;
 	background:#FFF;
@@ -315,16 +315,54 @@ ul.g_nav01{
 	max-width:950px;
 }
 
-#voice{
-	max-width:950px;
-	margin:0 auto;
-	padding-top:140px;
+#voice .syashin img{
+	margin-top: 10%;
+}
+
+
+#voice .parent {
+	max-width: 950px;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex_left,
+.flex_right{
+	width: 40%;
+	margin: 3% 3% 3% 3%;
+}
+
+.flex_left img,
+.flex_right img{
+	width: 100%;
+	box-shadow: 2px 2px 4px grey;
+}
+
+#voice h4{
+	font-family: serif;
+}
+
+#voice h4 .koe3,h4 .koe4{
+	padding-right: 15px;
+}
+
+#voice .koe3,.koe4{
+	font-size: 20px;
+	color: #360;
+	font-weiht: hold;
 }
 
 #contents05{
 	max-width:950px;
 	margin:0 auto;
 	padding-top:140px;
+}
+
+.otoiawase{
+	margin-top: 10%;
 }
 
 #contents06{
@@ -419,6 +457,11 @@ ul.g_nav01{
 	font-weight:bold;
 }
 
+footer ul{
+	font-size:13px;
+}
+
+
 #agreement img.freedial{
 	display:none;
 }
@@ -439,6 +482,7 @@ ul.g_nav01{
 	/*padding-top:105px;*/
 }
 
+
 }
 
 /* スマホ向けCSS */
@@ -454,7 +498,7 @@ ul.g_nav01{
 .nav_sp{
 	display:block;
 	width:90%;
-	margin:2% auto;	
+	margin:2% auto;		
 }
 
 .g_nav01_sp{
@@ -462,10 +506,11 @@ ul.g_nav01{
 	table-layout:fixed;
 	margin:1% auto;
 	padding:0;
+	
 }
 
 .g_nav01_sp ul{
-	margin:0 auto;
+	margin: 0 auto;
 }
 
 .g_nav01_sp li{
@@ -473,8 +518,12 @@ ul.g_nav01{
 	list-style:none;
 }
 
+.g_nav01_sp img{
+	width: 100%;
+}
+
 .nav_pc{
-	display:none;	
+	display: none;	
 }
 
 .fd{
@@ -627,6 +676,46 @@ ul.g_nav01{
 	width:100%;
 }
 
+#voice .syashin img{
+	margin-top: 5%;
+}
+
+
+#voice .parent {
+	max-width: 950px;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex_left,
+.flex_right{
+	width: 80%;
+	margin: 5% 0 5% 0;
+}
+
+.flex_left img,
+.flex_right img{
+	width: 100%;
+	box-shadow: 2px 2px 4px grey;
+}
+
+#voice h4{
+	font-family: serif;
+}
+
+#voice h4 .koe3,h4 .koe4{
+	padding-right: 15px;
+}
+
+#voice .koe3,.koe4{
+	font-size: 20px;
+	color: #360;
+	font-weiht: hold;
+}
+
 #contents05 img{
 	display:block;
 	width:100%;
@@ -655,7 +744,7 @@ ul.g_nav01{
 #mail_form{
 	width:96%;
 	margin:5% auto 0 auto;
-	padding-bottom:20%;
+	padding-bottom:20%;	
 }
 
 #mail_form table{
@@ -735,7 +824,7 @@ ul.g_nav01{
 }
 
 footer ul{
-	width:60%;
+	width: 60%;
 }
 
 #agreement img.freedial{
