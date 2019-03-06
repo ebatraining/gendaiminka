@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/colorbox.css">
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.ui.core.min.js"></script>
 <script src="js/jquery.ui.datepicker.min.js"></script>
@@ -19,6 +20,7 @@
 <script src="js/scrolltop.js"></script>
 <script src="js/phone.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -42,6 +44,15 @@ $(function() {
 	$('#date_three').datepicker({
         dateFormat: 'yy-mm-dd',//年月日の並びを変更
     });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+    $(".single").colorbox({
+    maxWidth:"90%",
+    maxHeight:"90%",
+    opacity: 0.7
+  });
 });
 </script>
 </head>
@@ -285,7 +296,40 @@ $(function() {
             </div>
             <article>
               <section id="voice">
-                <img src="images/voice.jpg" alt="お客様の声">
+              	<div class="syashin">
+                	<img src="images/voice2.jpg" alt="お客様の声">
+                </div>
+                    <div class="parent">
+                        <div class="flex_left">
+                            <h4><span class="koe3">01</span>柏市Ｋ様</h4>
+                            <a class="single" href="images/message01.jpg"><img src="images/message01.jpg" alt="画像" /></a>
+                        </div>
+                        <div class="flex_right">
+                            <h4><span class="koe4">02</span>柏市Ａ様</h4>
+                        <a class="single" href="images/message02.jpg"><img src="images/message02.jpg" alt="お客様の声" /></a>
+                        </div>
+                        <div class="flex_left"><h4><span class="koe3">03</span>印西市Ｙ様</h4>
+                            <a class="single" href="images/message03.jpg"><img src="images/message03.jpg" alt="お客様の声" /></a>
+                        </div>
+                        <div class="flex_right">
+                            <h4><span class="koe4">04</span>松戸市Ａ様</h4>
+                        <a class="single" href="images/message04.jpg"><img src="images/message04.jpg" alt="お客様の声" /></a></div>
+                        <div class="flex_left">
+                            <h4><span class="koe3">05</span>柏市Ｍ様</h4>
+                        <a class="single" href="images/message05.jpg"><img src="images/message05.jpg" alt="お客様の声" /></a>
+                        </div>
+                        <div class="flex_right">
+                            <h4><span class="koe4">06</span>柏市Ｓ様</h4>
+                        <a class="single" href="images/message06.jpg"><img src="images/message06.jpg" alt="お客様の声" /></a></div>
+                        <div class="flex_left">
+                            <h4><span class="koe3">07</span>柏市Ｎ様</h4>
+                        <a class="single" href="images/message07.jpg"><img src="images/message07.jpg" alt="お客様の声" /></a>
+                        </div>
+                        <div class="flex_right">
+                            <h4><span class="koe4">08</span>松戸市Ｎ様</h4>
+                        <a class="single" href="images/message08.jpg"><img src="images/message08.jpg" alt="お客様の声" /></a>
+                        </div>
+                </div>
               </section>
               <nav class="nav_sp">
               	<ul class="g_nav01_sp">
@@ -468,7 +512,7 @@ $(function() {
                       <input type="submit" value="送信">
                       <input type="reset" value="リセット">
                   </div>
-                </form>
+                  </form>
               </section>
             </article>
             <footer>
