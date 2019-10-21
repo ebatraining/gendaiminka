@@ -3,6 +3,7 @@
 
 html{
 	font-size:100%;
+	
 }
 
 body{
@@ -10,7 +11,8 @@ body{
 	width:100%;
 	margin:0px auto;
 	padding:0px;
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: 'Noto Serif JP', serif;
+	/* font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
 	font-size:100%;
 	color:#000;
 }
@@ -235,6 +237,52 @@ ul.g_nav01{
 	max-width:950px;
 	margin:0 auto;
 	padding-top:140px;
+}
+
+#contents03-0{
+	padding: 0 70px 0 70px;
+}
+
+#contents-3-1{
+	position: relative;
+}
+
+#contents03-1 h1,
+#contents03-2 h1,
+#contents03-3 h1,
+#contents03-4 h1{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 2.3rem;
+	color: #2D635F;
+	position: absolute;
+}
+
+#contents03-text{
+	display: inline-block;
+	margin-left: 10%;
+}
+
+#contents03-image,
+#contents03-image{
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+#contents03-1text,
+#contents04-1text{
+	width: 50%;
+	float: right;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#contents03-2text,
+#contents04-2text{
+	width: 50%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 #contents04{
@@ -494,6 +542,15 @@ footer ul{
 	/*padding-top:105px;*/
 }
 
+/* micro clearfx */
+.cf:before,
+.cf:after{
+	content: "";
+	display: table;
+}
+.cf:after{ clear: both; }
+.cf{ zoom: 1; } /* For IE 6/7 */
+}
 
 }
 
