@@ -8,11 +8,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/colorbox.css">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.ui.core.min.js"></script>
 <script src="js/jquery.ui.datepicker.min.js"></script>
@@ -142,32 +142,32 @@ $(function() {
               <section id="contents02">
                 <img src="images/contents02-1_image.png" alt="現代民家とは">
                 <div id="contents02-1">
-                  <div>
-                      <h3>里山に佇む</h3>
+                  <div id="contents02-1text">
                       <p>
-                          昔ながらの「民家」は日本人の心の原風景。
-                          その民家を今の仕様に磨き上げた『現代民家』は、モノや食材の&#147;質&#148;にこだわり、
-                          丁寧な暮らしを大切にしたい人を温もりと安らぎで包みます。足を踏み入れるとどこか懐かしく、
-                          忘れかけていた日本人の暮らしや心を感じるのが『現代民家』です。
+                        <h3>里山に佇む</h3>
+                        昔ながらの「民家」は日本人の心の原風景。
+                        その民家を今の仕様に磨き上げた『現代民家』は、モノや食材の&#147;質&#148;にこだわり、
+                        丁寧な暮らしを大切にしたい人を温もりと安らぎで包みます。足を踏み入れるとどこか懐かしく、
+                        忘れかけていた日本人の暮らしや心を感じるのが『現代民家』です。
                       </p>
                   </div>
-                  <div>
-                    <h3>既存の材を活かして</h3>
+                  <div id="contents02-1text">
                     <p>
+                      <h3>既存の材を活かして</h3>
                       増改築により進化し、100年,200年と代々住み継がれてきた「民家」は、まさに先人の知恵と技の宝庫。
                       歴史の生き証人ともいえるでしょう。<br>
                       先人の知恵と技を大切に受け継いだ『現代民家』は、合板やビニールクロスといった家の呼吸を妨げてしまう石油由来の素材は使いません。</p>
                   </div>
-                  <div>
-                    <h3>人肌や目に触れる</h3>
+                  <div id="contents02-1text">
                     <p>
+                        <h3>人肌や目に触れる</h3>
                         場所には、食材選びと同様に、人と地球に優しく、手の届く価格で良質な国産自然素材を厳選。<br>
                         素材による快適性を実現じつつ、なおかつ省エネ性、最高級の耐震性も実現しました。
                     </p>
                   </div>
-                  <div>
-                    <h3>現代民家</h3>
+                  <div id="contents02-1text">
                     <p>
+                      <h3 id="contents02-1logo">現代民家</h3>
                       が醸し出す、まるで森の中で過ごすような癒やしの空間は、
                       「本物」の自然素材が息づいているからこそ。
                       「本物」次代へ繋ぐ上質な人生は、木と温もりを感じる『現代民家』から始まります。
@@ -586,16 +586,26 @@ $(function() {
               <section id="contents07">
                 <h1>相談事項</h1>
                 <div id="contents07-text">
-                  <h2>現代民家の見学</h2>
-                  <p>
-                    <span>モデルハウスにて見学会を承っています。</span>
-                    <span>※お子様を連れての見学会もお受けしています。</span>
-                  </p>
-                  <h2>現代民家のリフォーム相談</h2>
+                  <div>
+                    <div id="contents07-num">
+                      <span>1</span>
+                    </div>
+                    <h2>現代民家の見学</h2>
+                    <div id="contents07-num-text">
+                      <span>モデルハウスにて見学会を承っています。</span><br>
+                      <span>※お子様を連れての見学会もお受けしています。</span>
+                    </div>    
+                  </div>
+                  <div>
+                    <div id="contents07-num">
+                        <span>2</span>
+                    </div>
+                    <h2>現代民家のリフォーム相談</h2>    
+                  </div>
                   <h3>リフォーム版　現代民家について</h3>
                   <p>
                     お客様から多数のご要望をいただき、中古住宅や既存のご自宅に対して
-                    『現代民家』のコンセプト・仕様をそのままにリフォームしていただける商品を開発しました。
+                    『現代民家』のコンセプト・仕様をそのままにリフォームしていただける商品を開発しました。<br>
                     今の住まいを『現代民家』に生まれ変わらせませんか？
                   </p>
                   <div id="border">
@@ -608,7 +618,9 @@ $(function() {
                 <div id="contents07-img">
                   <img src="images/contents07_image_top.png" alt="お問い合わせ、相談事項・相談方法">
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.0806351313643!2d139.940957!3d35.795973999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQ3JzQ1LjUiTiAxMznCsDU2JzI3LjQiRQ!5e0!3m2!1sja!2sjp!4v1444039622761" frameborder="0" allowfullscreen></iframe>
+                <div id="gmap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.0806351313643!2d139.940957!3d35.795973999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQ3JzQ1LjUiTiAxMznCsDU2JzI3LjQiRQ!5e0!3m2!1sja!2sjp!4v1444039622761" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <img id="contents07-tel" src="images/contents07_image_bottom.jpg" alt="お問い合わせ、連絡先">
               </section>
             </article>
