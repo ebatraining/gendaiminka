@@ -105,7 +105,7 @@ ul{
 
 @media screen and (min-width:768px) {
 
-img{width:100%;}
+/* img{width:100%;} */
 
 .nav_pc{
 	display: block;
@@ -217,6 +217,18 @@ ul.g_nav01{
 	max-width:950px;
 	margin:0 auto;
 	padding-top:140px;
+	background-image: url(../images/contents02-3_image.png);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: right bottom 40%;
+}
+
+#contents02-1{
+	padding: 0 130px 0 130px;
+}
+
+#contents02-2{
+	text-align: center;
 }
 
 #contents03{
@@ -584,6 +596,7 @@ footer ul{
 #contents02 img{
 	display:block;
 	width:100%;
+
 }
 
 #contents03 img{
