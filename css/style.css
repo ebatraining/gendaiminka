@@ -438,7 +438,6 @@ ul.g_nav01{
 
 #contents05-4,
 #contents05-5{
-margin: 0 70px 0 70px;
 }
 
 .otoiawase{
@@ -448,7 +447,29 @@ margin: 0 70px 0 70px;
 #contents06{
 	max-width:950px;
 	margin:0 auto;
-	padding-top:140px;
+	padding:140px 30px 0 30px;
+
+}
+
+#contents06 h1{
+	font-size: 2.3rem;
+	color: #2D635F;
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents06-text{
+	padding: 10px 50px 50px 50px;
+}
+
+#contents06-highlight{
+	display: inline;
+	font-size: 1.3rem;
+	color: #2D635F;
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents06-img {
+	text-align: center;
 }
 
 #contents07{
