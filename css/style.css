@@ -419,6 +419,26 @@ ul.g_nav01{
 	max-width:950px;
 	margin:0 auto;
 	padding-top:140px;
+	text-align: center;
+}
+
+#contents05-1,
+#contents05-2,
+#contents05-3,
+#contents05-4,
+#contents05-5,
+#contents05-6,
+#contents05-7,
+#contents05-8{
+	width:33%;
+	padding: 1%;
+	box-sizing: border-box;
+	float: left;
+}
+
+#contents05-4,
+#contents05-5{
+margin: 0 70px 0 70px;
 }
 
 .otoiawase{
