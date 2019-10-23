@@ -82,6 +82,24 @@ $(function() {
           $('.drawer').drawer();
     });
 </script>
+<script>
+$(function() {
+  //モーダルを開く
+  $('.modalBtn').each(function(){
+    $(this).on('click',function(){
+      $('.overlay').fadeIn();
+      var target = $(this).data('target');
+      var modal = document.getElementById(target);
+      $(modal).fadeIn();
+        return false;
+      });
+  });
+  //モーダルの外側か閉じるをクリックでモーダルを閉じる
+  $('.overlay, .close').click(function() {
+    $('.overlay, .modal').fadeOut();
+  })
+});
+</script>
 </head>
 <body class="drawer drawer--right">
 	<div id="wrap">
@@ -302,7 +320,88 @@ $(function() {
             </div>
             <article>
               <section id="contents04">
-                <img src="images/contents04_image.jpg" alt="なぜ現代民家なのか、毎日の時間を感じることができ、本当の私たちを感じる暮らし">
+                <img id="contents04_pc" src="images/contents04_image.jpg" alt="なぜ現代民家なのか、毎日の時間を感じることができ、本当の私たちを感じる暮らし">
+                <img id="contents04_title" src="images/contents04_title.png" alt="なぜ現代民家なのか、毎日の時間を感じることができ、本当の私たちを感じる暮らし">
+                <div id="contents04_sp">
+                  <img src="images/contents04_image.png" alt="なぜ現代民家なのか、毎日の時間を感じることができ、本当の私たちを感じる暮らし">
+                  <div id="contents04_num">
+                      <div class="modalBtn modalBtn04" data-target="modal04"><span>４</span></div>
+                      <!-- モーダルウィンドウ -->
+                      <div class="overlay"></div>
+                      <div class="modal" id="modal04">
+                        <h3>&#10105;リビングにて</h3>
+                        <p class="modalTxt">
+                          仕事が長引いてしまい、夜遅くに帰宅。
+                          リラックスするために趣味の読書を。
+                          坪庭から溢れる光を眺めながら、わずかに聞こえる風の音に耳を傾ける。
+                          そのまま、本を片手にソファーに身を任せれば、本当の自分に還れる時間が始まる。
+                        </p>
+                        <div class="close">閉じる</div>
+                      </div>
+                    </div>
+                    <div id="contents04_num">
+                      <div class="modalBtn modalBtn02" data-target="modal02"><span>２</span></div>
+                      <!-- モーダルウィンドウ -->
+                      <div class="overlay"></div>
+                      <div class="modal" id="modal02">
+                        <h3>&#10103;キッチンにて</h3>
+                        <p class="modalTxt">
+                          ぐっすりと眠って、月曜の朝は少し早めに起きる。
+                          寝室からキッチンへの階段を下りていくと、すでに美味しそうな朝ごはんのにおい。
+                          月曜の朝は、家族全員でゆっくりと朝ごはんを食べる。
+                          無垢材と漆喰で包まれた大空間は、家族とのコミュニケーションを深めてくれる。
+                          家族からたくさんの元気をもらい、今日からまた忙しい一週間が始まる。
+                        </p>
+                        <div class="close">閉じる</div>
+                      </div>
+                    </div>
+                    <div id="contents04_num">
+                      <div class="modalBtn modalBtn03" data-target="modal03"><span>３</span></div>
+                      <!-- モーダルウィンドウ -->
+                      <div class="overlay"></div>
+                      <div class="modal" id="modal03">
+                        <h3>&#10104;主寝室にて</h3>
+                        <p class="modalTxt">
+                          お風呂上がりに今日のニュースを観て、瞼が重くなってきたのを感じ二階の寝室へ。
+                          扉を開けると室内をやわらかく映し出す間接照明。その光を頼りにベッドに入り、大きく深呼吸をする。
+                          外の音はほとんど聞こえない。聞こえるのはかすかな妻の寝息だけ。
+                          無垢材が醸し出す心地良い空気に包まれて、明日のことを考えながら自らも寝息をたてる。
+                        </p>
+                        <div class="close">閉じる</div>
+                      </div>
+                    </div>
+                    <div id="contents04_num">
+                      <div class="modalBtn modalBtn01" data-target="modal01"><span>１</span></div>
+                      <!-- モーダルウィンドウ -->
+                      <div class="overlay"></div>
+                      <div class="modal" id="modal01">
+                        <h3>&#10102;和室にて</h3>
+                        <p class="modalTxt">
+                          お酒を片手に畳に腰を下ろせば、目に飛び込んでくるのは光に照らされた淡い緑と木の質感。
+                          心地良く一定のリズムを刻む時計の針の音に耳を傾けながら、一秒一秒のときの流れを身体で感じるひとときが始まる。
+                          グラスの氷がカランとなる音、大好きな小説のページをめくる音。
+                          ゆっくりと過ぎていく時間を贅沢に楽しむ。
+                        </p>
+                        <div class="close">閉じる</div>
+                      </div>
+                    </div>
+                    <div id="contents04_num">
+                      <div class="modalBtn modalBtn05" data-target="modal05"><span>５</span></div>
+                      <!-- モーダルウィンドウ -->
+                      <div class="overlay"></div>
+                      <div class="modal" id="modal05">
+                        <h3>&#10106;玄関にて</h3>
+                        <p class="modalTxt">
+                          駅から歩いて自宅に近づいてくるほどに、少しずつ足早になっている自分に気づく。
+                          窓からこぼれる光が独特の雰囲気を作っている。何度も見る風景でも、季節ごとに表情を変えて楽しませてくれる。
+                          この10年で玄関のドアや外壁にも風合いが出てきた。
+                          大事にしている腕時計とおなじように愛着を感じられることが嬉しくなる。  
+                        </p>
+                        <div class="close">閉じる</div>
+                      </div>
+                    </div>
+                </div>
+                <p id="contents04_title">現代民家暮らしは、<br>毎日の時間経過を感じることができる暮らし、<br>本当の私達を感じる暮らしである。</p>
                 <div class="flexslider">
                 <ul class="slides">
                   <li data-thumb="images/slide1-thumb.jpg">

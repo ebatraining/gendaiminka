@@ -356,6 +356,13 @@ ul.g_nav01{
 	height: 0 auto;
 }
 
+#contents04_title,
+#contents04_sp,
+#contents04 p,
+#contents04_num{
+	display: none;
+}
+
 #contents04 .nav_sekoujirei_sp{
 	display:none;
 }
@@ -992,9 +999,116 @@ header{
 	box-sizing: border-box;
 }
 
-#contents04 img{
+#contents04_pc{
+	display: none;
+}
+
+#contents04_title,
+#contents04_sp img{
 	display:block;
 	width:100%;
+}
+
+#contents04_title{
+	margin: 20px;
+	color: #2D635F;
+	font-size: 0.8rem;
+}
+
+#contents04_sp{
+	margin: 20px 0 20px 0;
+	position: relative;
+}
+
+/*--- オーバーレイ ---*/
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(153, 153, 153, 0.1);
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  width: 70%;
+  height: 0 auto;
+  padding: 20px;
+  margin: auto;
+  background-color: rgb(212, 206, 121);
+  border-radius: 5px;
+}
+
+.modal h3{
+	color: #2D635F;
+	font-size: 1.7rem;
+}
+
+.modal .modalTxt {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.modal .close {
+  text-align: center;
+  cursor: pointer;
+}
+
+.modalBtn{
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #2D635F;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.modalBtn span{
+	display: inline-block;
+	color: #fff;
+	padding: 7px;
+}
+
+/* モーダルボタン位置 */
+.modalBtn04{
+	position: absolute;
+	top: 5%;
+	left: 3%;
+}
+
+.modalBtn02{
+	position: absolute;
+	top: 5%;
+	left: 28%;
+}
+
+.modalBtn03{
+	position: absolute;
+	top: 5%;
+	right: 28%;
+}
+
+.modalBtn01{
+	position: absolute;
+	top: 50%;
+	left: 15%;
+}
+
+.modalBtn05{
+	position: absolute;
+	top: 50%;
+	left: 48%;
 }
 
 #contents04 .nav_sekoujirei{
