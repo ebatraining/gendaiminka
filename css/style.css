@@ -121,6 +121,10 @@ ul{
 	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
 }
 
+header{
+	display: none;
+}
+
 .freedial{
 	width: 100%;
 	height: 0 auto;
@@ -206,8 +210,13 @@ ul.g_nav01{
 	padding-top:140px;
 }
 
-#contents01 img.freedial{
-	display:none;
+#contents01-logobox1,
+#contents01-logobox2{
+	display: none;
+}
+
+#contents01 p{
+	display: none;
 }
 
 #contents01{
@@ -756,7 +765,6 @@ footer ul{
 .cf{ zoom: 1; } /* For IE 6/7 */
 }
 
-}
 
 /* スマホ向けCSS */
 
@@ -766,13 +774,96 @@ footer ul{
 	width:100%;
 }
 
-/* グローバルナビ */
-
-.nav_sp{
-	display:block;
-	width:90%;
-	margin:2% auto;		
+.nav_pc{
+	display: none;	
 }
+
+.g_nav01{
+	display:none;
+}
+
+header{
+	position: fixed;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #555;
+	height: 185px;
+	z-index: 1001;
+}
+
+.freedial{
+	display: none;
+}
+
+#contents01{
+	text-align: center;
+	width: 100%;
+}
+
+#contents01 p{
+	margin: 0 0 10px 0;
+	font-size: 0.6rem;
+}
+
+#contents01-logobox1{
+	width: 30%;
+	display: inline-block;
+}
+
+#contents01-logoimg1{
+	width: 100%;
+	height: 0 auto;
+	padding: 10px 0 0px 0;
+}
+
+#contents01-logobox2{
+	display: block;
+	width: 80%;
+	display: inline-block;
+	background-color: #2D635F;
+	border-radius: 2px;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	text-align: center;
+	transition: .3s;
+	background-size: 200%;
+	border: 0.5px solid #FFF;
+	box-shadow: 0px 0px 0px 3px #2D635F;
+}
+
+#contents01-logobox2:hover{
+	background-color: rgb(99, 163, 159);
+	box-shadow: 0px 0px 0px 3px rgb(99, 163, 159);
+}
+
+#contents01-logobox2 a {
+	text-decoration: none;
+}
+
+#contents01-logobox2 span{
+	display: inline;
+	color: #FFF;
+	font-size: 1rem;
+}
+
+#contents01-logoimg2{
+	width: 50%;
+	height: 0auto;
+	margin-right: 5px;
+	vertical-align:middle;
+}
+
+.phone-icon:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f095";
+	font-weight: 900;
+	padding-right: 5px;
+	color: #FFF;
+  }
+
+#top_img_sp{
+	margin-top: 185px;
+}
+
 
 .g_nav01_sp{
 	display:table;
@@ -780,89 +871,125 @@ footer ul{
 	margin:1% auto;
 	padding:0;
 	
-}
-
-.g_nav01_sp ul{
-	margin: 0 auto;
-}
-
-.g_nav01_sp li{
-	display:table-cell;
-	list-style:none;
-}
-
-.g_nav01_sp img{
-	width: 100%;
-}
-
-.nav_pc{
-	display: none;	
-}
-
-.fd{
-	width:95%;
-	text-align:right;
-	display:inline-block;
-}
-
-.fd span{
-	font-weight:bold;
-	font-size:1.2rem;
-	padding-left:2.5em;
-	background:url(../images/fb.jpg) no-repeat left;
-}
-
-.time{
-	width:95%;
-	text-align:right;
-}
-
-.time span{
-	font-weight:bold;
-	font-size:80%;
-	color:#1B1B1B;
-}
-
-.g_nav01{
-	display:none;
-}
+} 
 
 /* メインコンテンツ */
 
 .otoiawase{
 	display:block;
 	width:90%;
-	margin:0 auto 5% auto;	
+	margin:20px auto 5% auto;
 }
 
 .otoiawase img{
 	width:100%;
 }
 
-.tokuten img{
-	display:block;
-	width:100%;
-}
-
-#contents01 img.freedial{
-	display:block;
-	width:100%;
-}
-
-#contents01 img{
-	display:block;
-	width:100%;
+#top_img_sp{
+	width: 100%;
+	height: 0 auto;
 }
 
 #contents02 img{
 	display:block;
 	width:100%;
-
 }
+
+#contents02-1{
+	line-height: 150%;
+	padding: 0 20px 0 20px;
+}
+
+#contents02-1text{
+	margin-bottom: 50px;
+	font-size: 0.8rem;
+}
+
+#contents02-1 h3{
+	display: inline;
+	font-size: 1.3rem;
+}
+
+#contents02-2 img{
+	width: 100%;
+	height: 0 auto;
+}
+
 
 #contents03 img{
 	display:block;
 	width:100%;
+}
+
+#contents03{
+	margin:0 auto;
+}
+
+#contents03-0{
+	padding: 0 20px 0 20px;
+}
+
+#contents03 p{
+	padding: 0;
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+#contents03-top{
+	width: 100%;
+	height: 0 auto;
+}
+
+#contents03-1_img,
+#contents03-2_img,
+#contents03-3_img,
+#contents03-4_img{
+	width: 80%;
+	height: 100%;
+}
+
+#contents-3-1{
+	position: relative;
+}
+
+#contents03-1 h1,
+#contents03-2 h1,
+#contents03-3 h1,
+#contents03-4 h1{
+	display: inline-block;
+	margin-top: 50px;
+	font-size: 2.3rem;
+	color: #2D635F;
+	position: absolute;
+}
+
+#contents03-1 h2,
+#contents03-2 h2,
+#contents03-3 h2,
+#contents03-4 h2{
+	display: inline-block;
+	margin: 50px 0 20px 55px;
+	font-size: 1.2rem;
+}
+
+#contents03-3image,
+#contents03-4image{
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+#contents03-3image img,
+#contents03-4image img{
+	width: 100%;
+	height: 0 auto;
+}
+
+#contents03-1text,
+#contents04-1text,
+#contents03-2text,
+#contents04-2text{
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 #contents04 img{
@@ -987,17 +1114,127 @@ footer ul{
 #voice .koe3,.koe4{
 	font-size: 20px;
 	color: #360;
-	font-weiht: hold;
+	font-weiht: bold;
 }
 
-#contents05 img{
+#contents05{
+	text-align: center;
+}
+
+#contents05-top,
+#contents05-sub,
+#contents05-photo{
 	display:block;
 	width:100%;
+}
+
+#contents05-1,
+#contents05-2,
+#contents05-3,
+#contents05-4,
+#contents05-5,
+#contents05-6,
+#contents05-7,
+#contents05-8{
+	margin: 0 20px 0 20px;
+}
+
+#contents05-icon{
+	height: 50px;
+	margin: 10px 0 10px 0;	
+	vertical-align: middle;
+}
+
+#contents05 h3{
+	display: inline-block;	
+}
+
+#contents05 p{
+	margin-bottom: 50px;
+}
+
+#contents06{
+	padding:50px 20px 0 20px;
 }
 
 #contents06 img{
 	display:block;
 	width:100%;
+}
+
+#contents06 h1{
+	font-size: 1.5rem;
+	color: #2D635F;
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents06-text p{
+	margin: 30px 0 30px 0;
+}
+
+#contents06-highlight{
+	display: inline;
+	font-size: 1.3rem;
+	color: #2D635F;
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents06-img p{
+	text-align: center;
+}
+
+#contents07{
+	padding:50px 20px 0 20px;
+}
+
+#contents07-num{
+	background-color: #2D635F;
+	height: 2.2rem;
+	width: 2.2rem;
+	border-radius: 2px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#contents07-num span{
+	display: inline-block;
+	color: #FFF;
+	font-size: 1.2rem;
+	padding-top: 2px;
+}
+
+#contents07-num-text{
+	font-size: 0.7rem;
+}
+
+#contents07 h1{
+	font-size: 1.5rem;
+	color: #2D635F;
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents07 h2{
+	font-size: 1.1rem;
+	color: #2D635F;
+	display: inline-block;
+}
+
+#contents07 h3{
+	font-size: 1.1rem;
+	color: #2D635F;
+}
+
+#border{
+	border-bottom: solid 1px #2D635F;
+}
+
+#contents07-reform{
+	font-size: 0.9rem;
+}
+
+#contents07-highlight{
+	font-size: 1.1rem;
 }
 
 #contents07 img{
@@ -1007,7 +1244,6 @@ footer ul{
 
 #contents07 iframe{
 	width:100%;
-	padding:3%;
 }
 
 .mail_form_sp_title img{
@@ -1119,6 +1355,16 @@ footer ul{
 #privacy img{
 	display:block;
 	width:100%;
+}
+
+/* micro clearfx */
+.cf:before,
+.cf:after{
+	content: "";
+	display: table;
+}
+.cf:after{ clear: both; }
+.cf{ zoom: 1; } /* For IE 6/7 */
 }
 
 }

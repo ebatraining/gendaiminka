@@ -8,11 +8,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no">
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.ui.core.min.js"></script>
 <script src="js/jquery.ui.datepicker.min.js"></script>
@@ -22,6 +26,8 @@
 <script src="js/phone.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -56,8 +62,28 @@ $(function() {
   });
 });
 </script>
+<script type="text/javascript">
+		$(function() {
+			if (!isPhone())
+					return;
+ 
+			$('span[data-action=call]').each(function() {
+					var $ele = $(this);
+					$ele.wrap('<a href="tel:' + $ele.data('tel') + '"></a>');
+			});
+		});
+ 
+		function isPhone() {
+			return (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0);
+		}
+</script>
+<script>
+    $(document).ready(function() {
+          $('.drawer').drawer();
+    });
+</script>
 </head>
-<body>
+<body class="drawer drawer--right">
 	<div id="wrap">
     	<div id="contents">
         <nav class="nav_pc">
@@ -91,47 +117,36 @@ $(function() {
             </ul>
         </nav>
         	<article>
-            	<section id="contents01">
-                <img class="freedial" src="images/freedial_sp.jpg" alt="現代民家フリーダイヤル">
-                <div class="fd">
-            		<span data-action="call" data-tel="0120121921">0120-121-921</span>
-            	</div>
-                <div class="time">
-                	<span>営業時間&nbsp;10:00～19:00</span>
-                </div>
-                <img src="images/contents01_image.png" alt="理想を現実に。自然のぬくもりを感じる住まい">
-            	</section>
-            	<nav class="nav_sp">
-              	<ul class="g_nav01_sp">
-                    <li>
-                    <a href="#contents02">
-                    <img src="images/g_nav02.jpg" alt="現代民家とは">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents03">
-                    <img src="images/g_nav03.jpg" alt="現代民家を支える品質">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents04">
-                    <img src="images/g_nav04.jpg" alt="現代民家の暮らし">
-                    </a>
-                    </li>
-               </ul>
-               <ul class="g_nav01_sp">
-                    <li>
-                    <a href="#voice">
-                    <img src="images/g_nav05.jpg" alt="お客様の声">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents05">
-                    <img src="images/g_nav06.jpg" alt="会社紹介">
-                    </a>
-                    </li>
-                </ul>
-              </nav>
+            <header id="contents01" class="cf">
+                <div id="contents01-logobox1">
+                    <img id="contents01-logoimg1" src="images/nav_logo.png" alt="現代民家ロゴ">
+                  </div>
+                  <p>-&nbsp;柏・松戸・白井・鎌ヶ谷市の注文住宅なら「現代民家」-</p>
+                  <div id="contents01-logobox2">
+                    <span data-action="call" data-tel="09039808565">
+                      <img id="contents01-logoimg2" src="images/nav01_image.png" alt="現代民家フリーダイヤル">
+                      <span class="phone-icon">電話で相談</span>
+                    </span>
+                  </div>
+                  <br>
+                  <button type="button" class="drawer-toggle drawer-hamburger">
+                      <span class="sr-only">toggle navigation</span>
+                      <span class="drawer-hamburger-icon"></span>
+                    </button>
+                    <nav class="drawer-nav" role="navigation">
+                      <ul class="drawer-menu">
+                        <li><a class="drawer-menu-item" href="#"></a></li>
+                        <li><a href="#contents02" class="drawer-menu-item">現代民家とは</a></li>
+                        <li><a href="#contents03" class="drawer-menu-item">現代民家を支える品質</a></li>
+                        <li><a href="#contents04" class="drawer-menu-item">現代民家の暮らし</a></li>
+                        <li><a href="#voice" class="drawer-menu-item">お客様の声</a></li>
+                        <li><a href="#contents05" class="drawer-menu-item">会社紹介</a></li>
+                      </ul>
+                    </nav>
+            </header>
+              <section id="contents01">
+                <img id="top_img_sp" src="images/contents01_image.png" alt="理想を現実に。自然のぬくもりを感じる住まい">
+              </section>
             </article>
             <div class="otoiawase">
                 <a href="#mail_form">
@@ -177,39 +192,7 @@ $(function() {
                 <div id="contents02-2">
                   <img src="images/contents02-2_image.png" alt="現代民家とは">
                 </div>
-                <!-- <img src="images/contents02_image.jpg" alt="現代民家とは"> -->
               </section>
-              <nav class="nav_sp">
-              	<ul class="g_nav01_sp">
-                    <li>
-                    <a href="#contents02">
-                    <img src="images/g_nav02.jpg" alt="現代民家とは">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents03">
-                    <img src="images/g_nav03.jpg" alt="現代民家を支える品質">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents04">
-                    <img src="images/g_nav04.jpg" alt="現代民家の暮らし">
-                    </a>
-                    </li>
-               </ul>
-               <ul class="g_nav01_sp">
-                    <li>
-                    <a href="#voice">
-                    <img src="images/g_nav05.jpg" alt="お客様の声">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents05">
-                    <img src="images/g_nav06.jpg" alt="会社紹介">
-                    </a>
-                    </li>
-                </ul>
-              </nav>
             </article>
             <div class="otoiawase">
                 <a href="#mail_form">
@@ -311,37 +294,6 @@ $(function() {
                   </div>
                 </div>
               </section>
-              <nav class="nav_sp">
-              	<ul class="g_nav01_sp">
-                    <li>
-                    <a href="#contents02">
-                    <img src="images/g_nav02.jpg" alt="現代民家とは">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents03">
-                    <img src="images/g_nav03.jpg" alt="現代民家を支える品質">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents04">
-                    <img src="images/g_nav04.jpg" alt="現代民家の暮らし">
-                    </a>
-                    </li>
-               </ul>
-               <ul class="g_nav01_sp">
-                    <li>
-                    <a href="#voice">
-                    <img src="images/g_nav05.jpg" alt="お客様の声">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents05">
-                    <img src="images/g_nav06.jpg" alt="会社紹介">
-                    </a>
-                    </li>
-                </ul>
-              </nav>
             </article>
             <div class="otoiawase">
                 <a href="#mail_form">
@@ -386,37 +338,6 @@ $(function() {
                 </ul>
               </div>
               </section>
-              <nav class="nav_sp">
-              	<ul class="g_nav01_sp">
-                    <li>
-                    <a href="#contents02">
-                    <img src="images/g_nav02.jpg" alt="現代民家とは">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents03">
-                    <img src="images/g_nav03.jpg" alt="現代民家を支える品質">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents04">
-                    <img src="images/g_nav04.jpg" alt="現代民家の暮らし">
-                    </a>
-                    </li>
-               </ul>
-               <ul class="g_nav01_sp">
-                    <li>
-                    <a href="#voice">
-                    <img src="images/g_nav05.jpg" alt="お客様の声">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#contents05">
-                    <img src="images/g_nav06.jpg" alt="会社紹介">
-                    </a>
-                    </li>
-                </ul>
-              </nav>
             </article>
             <div class="otoiawase">
                 <a href="#mail_form">
@@ -603,7 +524,7 @@ $(function() {
                     <h2>現代民家のリフォーム相談</h2>    
                   </div>
                   <h3>リフォーム版　現代民家について</h3>
-                  <p>
+                  <p id="contents07-reform">
                     お客様から多数のご要望をいただき、中古住宅や既存のご自宅に対して
                     『現代民家』のコンセプト・仕様をそのままにリフォームしていただける商品を開発しました。<br>
                     今の住まいを『現代民家』に生まれ変わらせませんか？
