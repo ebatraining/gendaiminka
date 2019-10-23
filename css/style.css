@@ -470,16 +470,24 @@ ul.g_nav01{
 .flex_right{
 	width: 40%;
 	margin: 3% 3% 3% 3%;
+	position: relative;
 }
 
 .flex_left img,
 .flex_right img{
 	width: 100%;
-	box-shadow: 2px 2px 4px grey;
 }
 
 #voice h4{
 	font-family: serif;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 30px;
+}
+
+.non-photo{
+	padding-top: 80px;
 }
 
 #voice h4 .koe3,h4 .koe4{
@@ -1209,17 +1217,28 @@ header{
 .flex_right{
 	width: 80%;
 	margin: 5% 0 5% 0;
+	position: relative;
 }
 
 .flex_left img,
 .flex_right img{
 	width: 100%;
-	box-shadow: 2px 2px 4px grey;
 }
 
 #voice h4{
 	font-family: serif;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	margin-top: 15px;
 }
+
+.non-photo{
+	padding-top: 60px;
+	margin-top: 0;
+}
+
 
 #voice h4 .koe3,h4 .koe4{
 	padding-right: 15px;
