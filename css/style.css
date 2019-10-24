@@ -125,6 +125,10 @@ header{
 	display: none;
 }
 
+#top-textbox{
+	display: none;
+}
+
 .freedial{
 	width: 100%;
 	height: 0 auto;
@@ -487,7 +491,7 @@ ul.g_nav01{
 }
 
 .non-photo{
-	padding-top: 80px;
+	padding-top: 8.4%;
 }
 
 #voice h4 .koe3,h4 .koe4{
@@ -797,86 +801,123 @@ footer ul{
 	display:none;
 }
 
-header{
-	position: fixed;
-	background-color: #FFF;
-	box-shadow: 0 0 5px #555;
-	height: 185px;
-	z-index: 1001;
-}
-
 .freedial{
 	display: none;
 }
 
-#contents01{
-	text-align: center;
+header{
 	width: 100%;
-}
-
-#contents01 p{
-	margin: 0 0 10px 0;
-	font-size: 0.6rem;
+	height: 60px;
+	position: fixed;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #555;
+	z-index: 1001;
 }
 
 #contents01-logobox1{
-	width: 30%;
-	display: inline-block;
-}
-
-#contents01-logoimg1{
-	width: 100%;
-	height: 0 auto;
-	padding: 10px 0 0px 0;
+	display: block;
+	height: 60px;
+	width: 31%;
+	float: left;
+	text-align: center;
 }
 
 #contents01-logobox2{
-	display: block;
-	width: 80%;
-	display: inline-block;
-	background-color: #2D635F;
-	border-radius: 2px;
-	padding: 5px;
-	margin: 0 0 10px 0;
+	display: table;
+	height: 60px;
+	width: 35%;
+	float: left;
 	text-align: center;
-	transition: .3s;
-	background-size: 200%;
-	border: 0.5px solid #FFF;
-	box-shadow: 0px 0px 0px 3px #2D635F;
+	position: relative;
 }
 
-#contents01-logobox2:hover{
-	background-color: rgb(99, 163, 159);
-	box-shadow: 0px 0px 0px 3px rgb(99, 163, 159);
-}
-
-#contents01-logobox2 a {
-	text-decoration: none;
-}
-
-#contents01-logobox2 span{
-	display: inline;
-	color: #FFF;
-	font-size: 1rem;
+#contents01-logoimg1{
+	height: 85%;
+	padding: 3%;
+	box-sizing: border-box;
+	margin-top: 5px;
 }
 
 #contents01-logoimg2{
-	width: 50%;
-	height: 0auto;
-	margin-right: 5px;
-	vertical-align:middle;
+	width: 100%;
+	vertical-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 }
 
-.phone-icon:before {
+#contents01-logobox3{
+	display: block;
+	height: 60px;
+	width: 17%;
+	padding: 13px 0 11px 0;
+	box-sizing: border-box;;
+	float: left;
+	text-align: center;
+}
+
+#contents01-logobox3 span{
+	display: inline-block;
+	height: 100%;
+	min-width: 50px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 0.7rem;
+}
+
+#contents01-logobox3 a {
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+
+.phone-icon:before{
 	font-family: "Font Awesome 5 Free";
 	content: "\f095";
 	font-weight: 900;
-	padding-right: 5px;
-	color: #FFF;
+	color: #fff;
+}
+
+/* #contents01-logobox3:active{
+	background-color: rgb(99, 163, 159);
+} */
+ 
+
+.btn-square-soft {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: #2D635F;
+	border-radius: 5px;
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+	background: linear-gradient(rgb(59, 129, 125) 0%,rgb(26, 58, 56) 100%);
+	text-shadow: 1px 1px 1px rgb(96, 155, 151 0.66);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .btn-square-soft:active {
+	-webkit-transform: translateY(2px);
+	transform: translateY(2px);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	background-image: linear-gradient(rgb(140, 194, 191) 0%,rgb(91, 150, 146) 100%);
   }
 
+#top-textbox{
+	text-align: center;
+}
+
+#top-text{
+	font-size: 0.7px;
+	margin: 60px 0 0 0;
+	padding: 0;
+	display: inline-block;
+}
+
 #top_img_sp{
-	margin-top: 185px;
+	margin-top: 0;
 }
 
 
@@ -1018,9 +1059,9 @@ header{
 }
 
 #contents04_title{
-	margin: 20px;
 	color: #2D635F;
 	font-size: 0.8rem;
+	margin-left: 20px;
 }
 
 #contents04_sp{

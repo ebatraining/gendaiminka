@@ -11,11 +11,11 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="telephone=no">
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery-ui.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/colorbox.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.ui.core.min.js"></script>
@@ -135,36 +135,68 @@ $(function() {
             </ul>
         </nav>
         	<article>
+            <!-- <header id="contents01" class="cf">
+              <div id="contents01-logobox1">
+                <img id="contents01-logoimg1" src="images/nav_logo.png" alt="現代民家ロゴ">
+              </div>
+              <div id="contents01-logobox2" class="cf">
+                <img id="contents01-logoimg2" src="images/アートボード.png" alt="現代民家フリーダイヤル">
+              </div>
+              <div id="contents01-logobox3" class="cf">
+                <span data-action="call" data-tel="09039808565">
+                  <span class="phone-icon"><br>お電話</span>
+                </span>
+              </div>
+              <br>
+              <button type="button" class="drawer-toggle drawer-hamburger cf">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+              </button>
+              <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                  <li><a class="drawer-menu-item" href="#"></a></li>
+                  <li><a href="#contents02" class="drawer-menu-item">現代民家とは</a></li>
+                  <li><a href="#contents03" class="drawer-menu-item">現代民家を支える品質</a></li>
+                  <li><a href="#contents04" class="drawer-menu-item">現代民家の暮らし</a></li>
+                  <li><a href="#voice" class="drawer-menu-item">お客様の声</a></li>
+                  <li><a href="#contents05" class="drawer-menu-item">会社紹介</a></li>
+                </ul>
+              </nav>
+            </header> -->
             <header id="contents01" class="cf">
-                <div id="contents01-logobox1">
-                    <img id="contents01-logoimg1" src="images/nav_logo.png" alt="現代民家ロゴ">
-                  </div>
-                  <p>-&nbsp;柏・松戸・白井・鎌ヶ谷市の注文住宅なら「現代民家」-</p>
-                  <div id="contents01-logobox2">
-                    <span data-action="call" data-tel="09039808565">
-                      <img id="contents01-logoimg2" src="images/nav01_image.png" alt="現代民家フリーダイヤル">
-                      <span class="phone-icon">電話で相談</span>
-                    </span>
-                  </div>
-                  <br>
-                  <button type="button" class="drawer-toggle drawer-hamburger">
-                      <span class="sr-only">toggle navigation</span>
-                      <span class="drawer-hamburger-icon"></span>
-                    </button>
-                    <nav class="drawer-nav" role="navigation">
-                      <ul class="drawer-menu">
-                        <li><a class="drawer-menu-item" href="#"></a></li>
-                        <li><a href="#contents02" class="drawer-menu-item">現代民家とは</a></li>
-                        <li><a href="#contents03" class="drawer-menu-item">現代民家を支える品質</a></li>
-                        <li><a href="#contents04" class="drawer-menu-item">現代民家の暮らし</a></li>
-                        <li><a href="#voice" class="drawer-menu-item">お客様の声</a></li>
-                        <li><a href="#contents05" class="drawer-menu-item">会社紹介</a></li>
-                      </ul>
-                    </nav>
-            </header>
-              <section id="contents01">
-                <img id="top_img_sp" src="images/contents01_image.png" alt="理想を現実に。自然のぬくもりを感じる住まい">
-              </section>
+                <div id="contents01-logobox1" class="cf">
+                  <img id="contents01-logoimg1" src="images/nav_logo.png" alt="現代民家ロゴ">
+                </div>
+                <div id="contents01-logobox2" class="cf">
+                  <img id="contents01-logoimg2" src="images/nav_num.png" alt="現代民家フリーダイヤル">
+                </div>
+                <div id="contents01-logobox3" class="cf">
+                  <span data-action="call" data-tel="09039808565" class="btn-square-soft">
+                    <span class="phone-icon"><br>お電話</span>
+                  </span>
+                </div>
+                <br>
+                <button type="button" class="drawer-toggle drawer-hamburger cf">
+                  <span class="sr-only">toggle navigation</span>
+                  <span class="drawer-hamburger-icon"></span>
+                </button>
+                <nav class="drawer-nav" role="navigation">
+                  <ul class="drawer-menu">
+                    <li><a class="drawer-menu-item" href="#"></a></li>
+                    <li><a href="#contents02" class="drawer-menu-item">現代民家とは</a></li>
+                    <li><a href="#contents03" class="drawer-menu-item">現代民家を支える品質</a></li>
+                    <li><a href="#contents04" class="drawer-menu-item">現代民家の暮らし</a></li>
+                    <li><a href="#voice" class="drawer-menu-item">お客様の声</a></li>
+                    <li><a href="#contents05" class="drawer-menu-item">会社紹介</a></li>
+                  </ul>
+                </nav>
+              </header>
+            <div id="top-textbox">
+                <p id="top-text">-&nbsp;柏・松戸・白井・鎌ヶ谷市の注文住宅なら「現代民家」-</p>
+            </div>
+            <section id="contents01">
+              <img id="top_img_sp" src="images/contents01_image.png" alt="理想を現実に。自然のぬくもりを感じる住まい">
+            </section>
             </article>
             <div class="otoiawase">
                 <a href="#mail_form">
