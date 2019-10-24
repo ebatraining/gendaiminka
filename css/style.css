@@ -501,7 +501,7 @@ ul.g_nav01{
 #voice .koe3,.koe4{
 	font-size: 20px;
 	color: #360;
-	font-weiht: hold;
+	font-weiht: bold;
 }
 
 #contents05{
@@ -544,7 +544,7 @@ ul.g_nav01{
 }
 
 #contents05-sub{
-	width: 100%;
+	width: 90%;
 	height: 0 auto;
 	margin-top:  20px;
 }
@@ -878,12 +878,7 @@ header{
 	font-weight: 900;
 	color: #fff;
 }
-
-/* #contents01-logobox3:active{
-	background-color: rgb(99, 163, 159);
-} */
  
-
 .btn-square-soft {
 	display: inline-block;
 	position: relative;
@@ -1061,7 +1056,10 @@ header{
 #contents04_title{
 	color: #2D635F;
 	font-size: 0.8rem;
-	margin-left: 20px;
+}
+
+.contents04_text{
+margin-left: 20px;
 }
 
 #contents04_sp{
@@ -1093,7 +1091,7 @@ header{
   height: 0 auto;
   padding: 20px;
   margin: auto;
-  background-color: rgb(212, 206, 121);
+  background-color: rgb(255, 250, 176);
   border-radius: 5px;
 }
 
@@ -1324,6 +1322,7 @@ header{
 }
 
 #contents05 p{
+	font-size: 0.9rem;
 	margin-bottom: 50px;
 }
 
@@ -1354,6 +1353,7 @@ header{
 }
 
 #contents06-img p{
+	font-size: 0.8rem;
 	text-align: center;
 }
 
@@ -1539,6 +1539,4 @@ footer ul{
 }
 .cf:after{ clear: both; }
 .cf{ zoom: 1; } /* For IE 6/7 */
-}
-
 }
