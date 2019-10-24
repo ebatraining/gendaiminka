@@ -11,7 +11,8 @@ body{
 	width:100%;
 	margin:0px auto;
 	padding:0px;
-	font-family: 'Noto Serif JP', serif;
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	/* font-family: 'Noto Serif JP', serif; */
 	font-size:100%;
 	color:#000;
 }
@@ -257,6 +258,11 @@ ul.g_nav01{
 #contents02-1 h3{
 	display: inline;
 	font-size: 1.5rem;
+
+}
+
+.nomal{
+	font-weight: normal;
 }
 
 #contents02-2{
@@ -959,6 +965,10 @@ header{
 #contents02-1 h3{
 	display: inline;
 	font-size: 1.3rem;
+}
+
+.nomal{
+	font-weight: normal;
 }
 
 #contents02-2 img{
